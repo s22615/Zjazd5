@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            margin: 0 auto;
+            width: 250px;
+            border: 2px dashed black;
+        }
+        ul{
+            list-style: none;
+            padding: 25px;
+            margin: 0;
+        }
+        li{
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <h1>Witaj na przykladowej stronie</h1>
+        <span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+            in culpa qui officia deserunt mollit anim id est laborum.
+        </span>
+    </p>
+    <p>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+        <ul>
+            <li>tak</li>
+            <li>nie</li>
+            <li>moze</li>
+        </ul>
+    </p>
+    <p>
+        <form name="example" action="/example" method="POST">
+            <ul>
+                <li>
+                    <label for="firstnumberl"></label>
+                    <input type="number" id="firstnumberl" name="firstnumber">
+                </li>
+                <li>
+                    <label for="Wybierz znak"></label>
+                    <select name="znaki" id="znaki">
+                        <option value="dodawanie">+</option>
+                        <option value="odejmowanie">-</option>
+                        <option value="mnozenie">*</option>
+                        <option value="dzielenie">/</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="secondnumberl"></label>
+                    <input type="number" id="secondnumberl" name="secondnumber">
+                </li>
+                <li>
+                    <button name="submit" name="wynik">Oblicz</button>
+                </li>
+            </ul>
+        </form>
+
+    </p>
+</body>
+</html>
