@@ -15,6 +15,9 @@
         li{
             padding-bottom: 5px;
         }
+        #com{
+            border-style: none;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +48,7 @@
             <ul>
                 <li>
                     <label for="freetext1"></label>
-                    <input type="text" id="freetext1" name="freetext">
+                    <input type="text" id="freetext1" name="freetext`">
                 </li>
                 <li>
                     <input type="submit" name="submit" value="Wyslij">
@@ -76,7 +79,22 @@
                 </li>
             </ul>
         </form>
-
+        <form name="zad3" action="/zad3" method="POST">
+            <ul>
+                <li>
+                    <label for="login"></label>
+                    <input type="text" id="login" name="login" placeholder="LOGIN" value="{{ value }}">
+                </li>
+                <li>
+                    <label for="pass"></label>
+                    <input type="password" id="pass" name="pass" placeholder="PASSWORD">
+                </li>
+                <li>
+                    <input type="submit" name="log" value="Zaloguj">
+                </li>
+                <li><input type="text" id="com" name="info" value="{{ value1 }}"></li>
+            </ul>
+        </form>
     </p>
 </body>
 </html>

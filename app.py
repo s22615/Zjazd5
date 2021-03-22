@@ -29,6 +29,17 @@ def zad2():
     return str(result)
 
 
+@app.route('/zad3', methods=('GET', 'POST'))
+def zad3():
+    correctpass = "abc"
+    writtenlog = request.form['login']
+    writtenpass = request.form['pass']
+    if correctpass == writtenpass:
+        return render_template('index2.html')
+    else:
+        return render_template('index.html', value=writtenlog, value1='Incorrect Password')
+
+
 @app.route('/')
 def hello_world():
     return render_template('index.html')
